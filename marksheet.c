@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int rollno, sub1, sub2, sub3, total;
+    float avg;
+    char name[20];
+
+    printf("Enter Your Rollno.:- ");
+    scanf("%d", &rollno);
+
+    printf("Enter Your Name:- ");
+    scanf("%s", &name);
+
+    printf("Enter sub1:- ");
+    scanf("%d", &sub1);
+
+    printf("Enter sub2 :- ");
+    scanf("%d", &sub2);
+
+    printf("Enter sub3 :- ");
+    scanf("%d", &sub3);
+
+    total = sub1 + sub2 + sub3;
+    avg = total / 3;
+
+    printf("\n rollno:- %d", rollno);
+    printf("\n name:- %s", name);
+    printf("\n sub1:- %d", sub1);
+    printf("\n sub2:- %d", sub2);
+    printf("\n sub3:- %d", sub3);
+    printf("\n total is :- %d", total);
+    printf("\n avg is :- %.2f", avg);
+
+    return 0;
+}
